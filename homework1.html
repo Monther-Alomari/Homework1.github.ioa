@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Homework</title>
+</head>
+<body>
+    <h1>my blog about my life</h1>
+    <h2>menu</h2>
+    <ul>
+        <li>today</li>
+        <li>yesterday</li>
+        <li>last week</li>
+        <li>archives</li>
+    </ul>
+    <h2 id="1">meeting with supervisor</h2>
+    <h3>14 dec 2011</h3>
+    <h3>today i bought my new car. it's a honda accrod and its really nice</h3>
+    <h3>i met some friends at a pub</h3>
+    <h2 id="2">new car !!!</h2>
+    <h3>12 dec 2011</h3>
+    <h3>today i went to the university by bus</h3>
+    <h3>i had a met with my PHD supervisor</h3>
+    <h2 id="3">visit my parents</h2>
+    <h3>10 dec 2011</h3>
+    <h3>tried to contact my PHD supervisor ,he was out of his office</h3>
+    <h3>i visited my parents and we had a nice dinner togother</h3>
+    <h2>last visits</h2>
+    <ul>
+        <li><a href="#1">meeting with supervisor</a></li>
+        <li><a href="#2">new car !!!</a></li>
+        <li><a href="#3">visit my parents</a></li>
+    </ul>
+    <hr>
+    <title>User Registration Form</title>
+    <style>
+      /* Apply some basic styles to improve form layout */
+      label {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+        margin-right: 10px;
+      }
+  
+      input {
+        width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+  
+  <h1>Create New User Account</h1>
+  
+  <form action="process_form.php" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+  
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required><br><br>
+  
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required><br><br>
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+  
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="gender">Gender:</label>
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="female" required>
+    <label for="female">Female</label><br><br>
+    <input type="radio" id="other" name="gender" value="other" required>
+    <label for="other">other</label><br><br>
+    <label for="comments">current address:</label>
+    <textarea id="comments" name="comments"></textarea><br><br>
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+    <label for="basketball">
+        <input type="checkbox" id="basketball" name="sports" value="basketball"> Basketball
+      </label>
+      
+      <label for="soccer">
+        <input type="checkbox" id="soccer" name="sports" value="soccer"> Soccer
+      </label>
+  
+      <label for="golf">
+        <input type="checkbox" id="golf" name="sports" value="golf"> Golf
+      </label>
+  
+      <label for="tennis">
+        <input type="checkbox" id="tennis" name="sports" value="tennis"> Tennis
+      </label>
+      <br>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
